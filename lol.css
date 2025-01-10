@@ -1,0 +1,108 @@
+/* styles.css */
+
+/* กำหนดสไตล์พื้นฐาน */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f4f7;  /* สีพื้นหลังที่ดูสะอาดตา */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container สำหรับเนื้อหาทั้งหมด */
+.container {
+    background-color: #fff;
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+/* ส่วนหัว */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #0046A5;  /* สีน้ำเงินที่เป็นทางการ */
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* ฟอร์มสำหรับกรอกข้อมูล */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 1rem;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fafafa;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0046A5;
+}
+
+/* ปุ่มคำนวณ */
+button.btn {
+    background-color: #0046A5;  /* สีน้ำเงินที่ดูมีความเป็นทางการ */
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.btn:hover {
+    background-color: #000000;  /* สีน้ำเงินเข้มเมื่อ hover */
+}
+
+/* ผลลัพธ์การคำนวณ */
+.result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #777;
+}

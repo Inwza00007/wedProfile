@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+    <title>คำนวณภาษี - ธีมธนาคาร</title>
+    <link rel="stylesheet" href="lol.css">
+</head>
+<button class="btn btn-outline"> <a href="index.html">𝐇𝐎𝐌𝐄</a></button>
+<button class="btn btn-outline btn-primary"><a href="Km.html">ᴡᴇᴅꜱɪᴛᴇ 1</a></button>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>คำนวณภาษีรายได้บุคคลธรรมดา</h1>
+            <p>กรุณากรอกข้อมูลเพื่อคำนวณภาษีที่ต้องชำระ</p>
+        </header>
+
+        <div class="form-container">
+            <label for="income">รายได้ (บาท):</label>
+            <input type="number" id="income" placeholder="กรอกรายได้ของคุณ" required>
+
+            <label for="deductions">หักลดหย่อน (บาท):</label>
+            <input type="number" id="deductions" placeholder="หักลดหย่อน (ถ้ามี)" required>
+
+            <button class="btn" onclick="calculateTax()">คำนวณภาษี</button>
+
+            <p id="tax-result" class="result"></p>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 ธนาคารของเรา</p>
+        </footer>
+    </div>
+
+    <script src="lol.js"></script>
+</body>
+</html>

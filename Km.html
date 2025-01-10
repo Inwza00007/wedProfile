@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <button class="btn btn-outline"> <a href="index.html">ᴡᴇᴅꜱɪᴛᴇ 1</a></button>
+    <button class="btn btn-outline"> <a href="lol.html">ᴡᴇᴅꜱɪᴛᴇ 2</a></button>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คำนวณระยะทาง</title>
+    <link rel="stylesheet" href="Km.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <header>
+        <h1>คำนวณระยะทาง</h1>
+    </header>
+
+    <main>
+        <div class="calculator">
+            <label for="start-point">จุดเริ่มต้น (A):</label>
+            <input type="text" id="start-point" placeholder="เช่น กรุงเทพฯ">
+
+            <label for="end-point">จุดปลายทาง (B):</label>
+            <input type="text" id="end-point" placeholder="เช่น เชียงใหม่">
+
+            <button onclick="calculateDistance()">คำนวณระยะทาง</button>
+
+            <p id="result"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 คำนวณระยะทาง</p>
+    </footer>
+
+    <script src="Km.js"></script>
+</body>
+</html>
